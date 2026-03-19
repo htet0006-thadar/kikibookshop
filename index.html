@@ -4,21 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kiki's Bookshop</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
 
   <header>
-    <div class="logo">LOGO</div>
+    <div class="logo"><a href="index.html">Kiki's</a></div>
     <div class="search-bar">
       <input type="text" placeholder="Search..." />
       <button class="filter-btn">Filter</button>
     </div>
-    <div class="header-icons">
-      <button class="icon-wishlist" aria-label="Wishlist">&#9825;</button>
-      <button class="icon-cart" aria-label="Cart">Cart</button>
-      <button class="icon-account" aria-label="Account">Account</button>
-    </div>
+    <nav class="header-icons">
+      <button class="icon-wishlist" onclick="window.location.href='#'" aria-label="Wishlist">&#9825;</button>
+      <button class="icon-shopping-cart" onclick="window.location.href='cart.html'" aria-label="Cart">Cart</button>
+      <button class="icon-account" onclick="window.location.href='#'" aria-label="Account">Account</button>
+      <button class="icon-about" onclick="window.location.href='about.html'">About</button>
+      </nav>
   </header>
 
   <nav class="genre-nav">
@@ -34,69 +36,49 @@
   </nav>
 
   <main>
+  <section class="hero-banner">
+    <img src="images/hero1.jpg" alt="Featured banner" />
+  </section>
 
-    <section class="hero-banner">
-      <img src="" alt="Featured banner" />
-    </section>
+  <!-- Best Sellers -->
+  <section class="book-section" id="best-sellers">
+    <div class="section-header">
+      <h2>Best Sellers</h2>
+      <a href="#">View More</a>
+    </div>
+    <div class="book-grid">
+      <div class="book-card">
+        <img src="images/memoir1.png" alt="Book cover" />
+        <a href="bookdetails.html"><p class="book-name">Crying in H Mart</p></a>
+      </div>
+      <div class="book-card">
+        <img src="images/memoir2.png" alt="Book cover" />
+        <a href="bookdetails.html"><p class="book-name">Educated</p></a>
+      </div>
+      <div class="book-card">
+        <img src="images/normalpeople.png" alt="Book cover" />
+        <a href="bookdetails.html"><p class="book-name">Normal People</p></a>
+      </div>
+      <div class="book-card">
+        <img src="images/dune.jpg" alt="Book cover" />
+        <a href="bookdetails.html"><p class="book-name">Dune</p></a>
+      </div>
+      <div class="book-card">
+        <img src="images/harrypotter.jpg" alt="Book cover" />
+        <a href="bookdetails.html"><p class="book-name">Harry Potter</p></a>
+      </div>
+    </div>
+  </section>
 
-    <section class="book-section" id="best-sellers">
-      <div class="section-header">
-        <h2>Best Sellers</h2>
-        <a href="#">View More</a>
-      </div>
-      <div class="book-grid">
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-      </div>
-    </section>
-
-    <section class="book-section" id="new-arrivals">
-      <div class="section-header">
-        <h2>New Arrivals</h2>
-        <a href="#">View More</a>
-      </div>
-      <div class="book-grid">
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-      </div>
-    </section>
-
-    <section class="book-section" id="most-popular">
-      <div class="section-header">
-        <h2>Most Popular</h2>
-        <a href="#">View More</a>
-      </div>
-      <div class="book-grid">
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-        <div class="book-card"><img src="" alt="Book cover" /></div>
-      </div>
-    </section>
-
-  </main>
+</main>
 
   <footer>
     <div class="footer-links">
       <div class="footer-col">
         <ul>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <ul>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work with Us</a></li>
         </ul>
       </div>
     </div>
@@ -106,6 +88,7 @@
       <a href="#" aria-label="Facebook">Facebook</a>
     </div>
   </footer>
+
 
 </body>
 </html>

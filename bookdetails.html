@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book Details - Kiki's Bookshop</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
 
   <header>
-    <div class="logo">LOGO</div>
+    <div class="logo"><a href="index.html">Kiki's</a></div>
     <div class="search-bar">
       <input type="text" placeholder="Search..." />
       <button class="filter-btn">Filter</button>
@@ -18,6 +19,7 @@
       <button class="icon-wishlist" aria-label="Wishlist">&#9825;</button>
       <button class="icon-cart" aria-label="Cart">Cart</button>
       <button class="icon-account" aria-label="Account">Account</button>
+      <button class="icon-about" onclick="window.location.href='projects/about.html'">About</button>
     </div>
   </header>
 
@@ -41,7 +43,7 @@
 
     <section class="book-details">
       <div class="book-cover">
-        <img src="" alt="Book Cover" />
+        <img src="images/memoir1.png" alt="Book Cover" />
       </div>
       <div class="book-info">
         <h1 class="book-title">Book Name</h1>
@@ -57,58 +59,55 @@
         </div>
         <div class="book-actions">
           <button class="add-to-cart">Add to Cart</button>
-          <button class="buy-now">Buy Now</button>
+          <button class="buy-now" onclick="window.location.href='cart.html'">Buy Now</button>
         </div>
       </div>
     </section>
 
     <section class="book-metadata">
-      <table>
-        <thead>
-          <tr>
-            <th>Pages</th>
-            <th>Publisher</th>
-            <th>Publication Date</th>
-            <th>Language</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>&mdash;</td>
-            <td>&mdash;</td>
-            <td>&mdash;</td>
-            <td>&mdash;</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="metadata-container">
 
-      <div class="authors-note">
-        <h3>Author's Note</h3>
-        <p>Lorem ipsum placeholder for author's note text.</p>
-      </div>
+        <div class="metadata-stats">
+          <div class="metadata-item">
+            <span class="metadata-label">Pages</span>
+            <span class="metadata-value">—</span>
+          </div>
+          <div class="metadata-item">
+            <span class="metadata-label">Publisher</span>
+            <span class="metadata-value">—</span>
+          </div>
+          <div class="metadata-item">
+            <span class="metadata-label">Publication Date</span>
+            <span class="metadata-value">—</span>
+          </div>
+          <div class="metadata-item">
+            <span class="metadata-label">Language</span>
+            <span class="metadata-value">—</span>
+          </div>
+        </div>
 
-      <div class="book-description">
-        <h3>Description</h3>
-        <p>Lorem ipsum placeholder for full book description text.</p>
+        <div class="authors-note">
+          <h3>Author's Note</h3>
+          <p>Lorem ipsum placeholder for author's note text.</p>
+        </div>
+
+        <div class="book-description">
+          <h3>Description</h3>
+          <p>Lorem ipsum placeholder for full book description text.</p>
+        </div>
+
       </div>
     </section>
 
   </main>
-
+  
   <footer>
     <div class="footer-links">
       <div class="footer-col">
         <ul>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <ul>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work with Us</a></li>
         </ul>
       </div>
     </div>
@@ -118,6 +117,7 @@
       <a href="#" aria-label="Facebook">Facebook</a>
     </div>
   </footer>
+
 
 </body>
 </html>
